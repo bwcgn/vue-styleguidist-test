@@ -1,18 +1,17 @@
 <template>
   <div>
-    <h1>HelloWorld - BE AWARE, I do include the mixin!</h1>
+    <h1>HelloWorld2</h1>
     <div>{{ testProp }} </div>
   </div>
 </template>
 
 <script>
-import HelloWorldMixins from '../mixins/helloWorld.mixins'
 export default {
-  name: "HelloWorld",
+  name: "HelloWorld2",
   props: {
     /**
      *  this is a comment for the test prop in
-     *  Helloworld.vue!
+     *  Helloworld2.vue!
      */
     testProp: {
       type: String,
@@ -21,7 +20,7 @@ export default {
     },
     /**
      *  this is a comment for the test prop in
-     *  Helloworld.vue!
+     *  Helloworld2.vue!
      */
     testProp1: {
       type: String,

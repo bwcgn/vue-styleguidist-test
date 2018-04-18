@@ -1,4 +1,4 @@
-# async-tst
+# mixin and documentation
 
 > A Vue.js project
 

@@ -1,4 +1,5 @@
 module.exports = {
+  showUsage: true,
   webpackConfig: {
     module: {
       rules: [
