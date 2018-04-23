@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>HelloWorld - BE AWARE, I do include the mixin!</h1>
-    <div>{{ testProp }} </div>
+    <div>testProp: {{ testProp }} </div>
+    <div>testProp1: {{ testProp1 }} </div>
+    <div>mixinProp: {{ mixinProp }} </div>
   </div>
 </template>
 
@@ -9,6 +11,7 @@
 import HelloWorldMixins from '../mixins/helloWorld.mixins'
 export default {
   name: "HelloWorld",
+  mixins: [HelloWorldMixins],
   props: {
     /**
      *  this is a comment for the test prop in
@@ -17,7 +20,7 @@ export default {
     testProp: {
       type: String,
       required: false,
-      default: null
+      default: "HelloWorld - testProp"
     },
     /**
      *  this is a comment for the test prop in
@@ -26,7 +29,7 @@ export default {
     testProp1: {
       type: String,
       required: false,
-      default: null
+      default: "HelloWorld - testProp1"
     }
   }
 };

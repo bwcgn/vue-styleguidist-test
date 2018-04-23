@@ -1,5 +1,6 @@
 module.exports = {
   showUsage: true,
+  serverPort: 6061,
   webpackConfig: {
     module: {
       rules: [
